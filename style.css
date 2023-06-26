@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: #f1fbff;
+}
+
+.section-padding{
+    padding: 100px 0;
+}
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption{
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    letter-spacing: 2;
+}
+
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 1;
+}
+
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-brand{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: #000;
+}
+
+.navbar-light .navbar-nav .navbar-link{
+    color: #000;
+}
+
+.w-100{
+    height: 100vh;
+}
+.services .card-body i{
+    font-size: 50px;
+}
+
+.team .card{
+    box-shadow: 15px 15px 40px rgba(0,0,0,.15);
+}
+#portfolio .card{
+    box-shadow: 15px 15px 40px rgba(0,0,0,.15);
+}
+
+
+/* responsive ness */
+
+@media (max-width:767px){
+    .navbar-nav .nav-item{
+        text-align: center;
+    }
+
+    .carousel-caption{
+        bottom: 50px;
+        z-index: 2;
+    }
+
+    .carousel-item{
+        height: 60vh;
+        min-height: 300px;
+    }
+
+    .carousel-caption{
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-top: 10px;
+        letter-spacing: 1.2;
+    }
+    .carousel-caption p{
+        width: 90%;
+        margin: auto;
+        font-size: 10px;
+        line-height: 1.9;
+    }
+}
+
+@media (max-width:992px){
+    .card-container{
+        margin-block: 20px;
+    }
+}
